@@ -137,3 +137,44 @@ body {
 }
 /*** GALLERY SECTION END ***/
 
+/*** FORM SECTION START ***/
+#form-section.main-section.main-section-flexed {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#form-section.main-section.main-section-flexed .section-info {
+    width: 50%;
+}
+
+#form-section.main-section .form-submit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);/*width*/
+    grid-template-rows: 40px 150px;/*height*/
+    grid-template-areas: 
+    'email subject'
+    'message message'
+    'button button';
+    gap: 2rem;
+}
+
+#form-section.main-section .form-submit input[name='email'] {
+    grid-area: email;
+}
+
+#form-section.main-section .form-submit input[name='subject'] {
+    grid-area: subject
+}
+
+#form-section.main-section .form-submit textarea[name='message'] {
+    grid-area: message;
+}
+
+#form-section.main-section .form-submit .send-btn {
+    grid-area: button;
+    padding: 0.5rem 1rem;
+    background-color: var(--black-color);
+    color: white;
+}
+/*** FORM SECTION END ***/

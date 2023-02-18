@@ -87,19 +87,54 @@
         <section class="main-section"
                  id="gallery">
 
-          <ul class="images" role="list">
-            <li class="img">
-                <img src="images/thumb-3.jpeg" alt="thumb-3">
-            </li>
+            <ul class="images"
+                role="list">
+                <li class="img">
+                    <img src="images/thumb-3.jpeg"
+                         alt="thumb-3">
+                </li>
 
-            <li class="img">
-                <img src="images/thumb-4.jpeg" alt="thumb-4">
-            </li>
+                <li class="img">
+                    <img src="images/thumb-4.jpeg"
+                         alt="thumb-4">
+                </li>
 
-            <li class="img">
-                <img src="images/thumb-122.jpeg" alt="thumb-122">
-            </li>
-          </ul>
+                <li class="img">
+                    <img src="images/thumb-122.jpeg"
+                         alt="thumb-122">
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section main-section-flexed"
+                 id="form-section">
+            <div class="section-info">
+                <h1 class="title">
+                    <strong>Say</strong>
+                    Hello
+                </h1>
+                <p class="desc">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                    nesciunt.
+    
+                </p>
+                <form action="/submit"
+                      method="GET"
+                      class="form-submit">
+                    <input type="email"
+                           name="email"
+                           placeholder="Your Email">
+                    <input type="text"
+                           name="subject"
+                           placeholder="Subject">
+                    <textarea name="message"
+                              cols="30"
+                              rows="5"
+                              placeholder="Message"></textarea>
+                    <button class="send-btn">SEND MESSAGE</button>
+                </form>
+            </div>
         </section>
     </main>
 </body>
