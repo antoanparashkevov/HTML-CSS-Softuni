@@ -1,0 +1,15 @@
+.container {
+    display: inline-block;
+    border: 2px dashed black;
+    margin-bottom: 20px;
+    height: 10vh;/* 10% from the viewport height */
+    width: 100vw;
+}
+
+.container-1 {
+    background-color: lightcoral;
+}
+
+.container-2 {
+    background-color: lightgreen;
+}
