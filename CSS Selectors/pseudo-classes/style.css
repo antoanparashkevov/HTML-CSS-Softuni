@@ -1,0 +1,161 @@
+/* PSEUDO CLASSES */
+
+/* CHILD PSEUDO CLASSES START */
+
+/* 
+    nth-child
+    matches elements based on their position.    
+    NOTE: the child count includes children of any element type,
+    BUT it only matches the element of the specified element type
+*/
+
+ul.ul-nth-child li:nth-child(4) {
+    background-color: red;
+}
+
+/*
+    It can be odd / even
+    nth-child(even)
+    nth-child(odd)
+*/
+
+
+/* Functional notation 
+    An + B
+    A = step size
+    B = offset
+    n = starts from 0 and for every step, it increases by 1
+*/
+ul.ul-nth-child li:nth-child(2n + 1) {
+    background-color: yellow;
+}
+
+
+/* 
+    nth-last-child 
+    matches elements based on their position, counting from the end.
+*/
+
+ul.ul-nth-last-child li:nth-last-child(2n) {
+    background-color: blue;
+}
+
+
+/*
+    nth-of-type
+    matches elements based on their position and of the same type (tag name)
+    for example: div:nth-of-type() will match only div tags
+    NOTE: It doesn't count elements with different type.
+*/
+
+ul.ul-nth-of-type li:nth-of-type(even) {
+    background-color: green;
+}
+
+/*
+    nth-last-of-type
+    matches elements based on their position and of the same type (tag name), 
+    counting from the end.
+*/
+
+
+ul.ul-nth-last-of-type li:nth-last-of-type(even) {
+    background-color: violet;
+}
+
+/*
+    first-child
+    represents the first element among a group of sibling elements
+    NOTE: It no direct child found, it goes down one level and searches there.
+*/
+
+ul.ul-first-child li:first-child {
+    background-color: aqua;
+}
+
+
+/*
+    first-of-type
+    represents the first element of its type among a group of sibling elements
+*/
+
+ul.ul-first-of-type li:first-of-type {
+    background-color: aquamarine;
+}
+
+/* CHILD PSEUDO CLASSES END */
+
+
+/* OTHER PSEUDO CLASSES START */
+
+/*
+    focus
+    hover
+    active
+    checked
+*/
+
+
+/*
+    active
+    represents an element (for most cases it's a button) that is being activated
+    for example when a user clicks.
+*/
+
+.active-btn:active {
+    background-color: red;
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+/*
+    hover
+*/
+
+.hover-btn:hover {
+    background-color: red;
+}
+
+/*
+    focus
+    represents an element (for most cases it's a for input) that is focused (clicked)
+    by the user
+*/
+
+.focus-input:focus {
+    background-color: red;
+}
+
+/*
+    checked
+    represents any radio button or checkbox, or <option> in a <select> that is checked
+*/
+
+.checked-input:checked {
+    outline: 2px solid red;
+}
+
+/* OTHER PSEUDO CLASSES END */
+
+/* PSEUDO ELEMENTS */
+
+/*
+    ::before,
+    ::after
+    Creates a pseudo element that is the first/last child of the selected element.
+    Thus don't apply like a replacement element or adding a new HTML tag
+    It's inline by default, not block or inline-block
+*/
+span.pseudo-elements {
+    position: relative;
+}
+
+span.pseudo-elements::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
