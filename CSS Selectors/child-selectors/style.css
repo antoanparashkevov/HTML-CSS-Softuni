@@ -1,0 +1,41 @@
+body {
+  background-color: lightgray;
+}
+
+/* CHILD COMBINATORS */
+
+/* 
+    The descendant combinator (" ") - single space.
+    Select all li items inside UL
+*/
+ul li {
+  background-color: red;
+}
+
+/* 
+    The child combinator (>) is placed between two CSS selectors. It matches
+    only those elements which are DIRECT children of the first element (UL)
+*/
+ul > li {
+  background-color: yellow;
+}
+
+/* 
+    The adjacent sibling combinator (+) separates two selectors and matches the
+    second element (P) ONLY if it immediately follows the FIRST element (DIV),
+    and both are children of the same parent element (.container-adjacent)    
+
+ */
+.container-adjacent div + p {
+  background-color: blue;
+}
+
+/*
+    The general sibling operator (~) separates two selectors and matches all
+    iterations of the second element (P), that are following the first element (DIV),
+    and both are children of the same parent element (.container-general)
+
+*/
+.container-general div ~ p {
+    background-color: red;
+}
