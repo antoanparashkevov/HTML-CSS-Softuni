@@ -1,0 +1,78 @@
+:root {
+    --main-bg-color: #efefef;
+    --main-text-color: #535353;
+    --socia-media-bg-color: #909090;
+    --black-color: #222222
+}
+
+/* GLOBAL STYLES */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-text-color);
+}
+
+.main-section {
+    max-width: 1880px;/*20px margin left and 20px margin right*/
+    height: calc(100vh - 24px);
+    margin: 1.5rem auto;
+    background-color: var(--main-bg-color);
+    padding: 2rem 4rem; 
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.main-section .title {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.main-section .desc {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+ /* LINE */
+.line {
+    display: block;
+    background-color: var(--black-color);
+}
+
+.vertical-line {
+    height: 6rem;
+    width: 1px;
+}
+
+.horizontal-line {
+    width: 6rem;
+    height: 1px;
+}
+
+/*** HERO SECTION START ***/
+
+/* INFO */
+#hero.main-section {
+    position: relative;
+}
+
+#hero.main-section .nav {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+#hero.main-section .section-info {
+   flex: 0 0 50%;
+}
+/* IMAGE */
+ img.hero-img {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+
+ }
+
+/*** HERO SECTION END ***/
