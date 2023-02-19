@@ -1,0 +1,187 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2a2c35;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/* Global styles */
+.explore-btn {
+    background: #370512;
+    border-color: #370512;
+    color: #FFFFFF;
+    padding: 4px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* HEADER START */
+.header-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 24px;
+}
+
+.header-container .navbar-list,
+.header-container .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header-container .navbar-list .navbar-item {
+    min-width: 50px;
+    padding: 0 24px;
+}
+
+.header-container .navbar-list .navbar-item a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* HEADER END */
+
+/* BOOK AN EXCLUSIVE START */
+.intro-section {
+    position: relative;
+}
+
+.intro-section .intro-section-img 
+{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.intro-section-info {
+    position: absolute;
+    top: 300px;
+    left: 15%;
+    text-align: start;
+}
+
+.intro-section-info .intro-section-title {
+    font-size: 40px;
+}
+.intro-section-info .intro-section-subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.intro-section-info .intro-section-desc2 {
+    margin-bottom: 25px;
+}
+
+.explore-intro-section {
+    background-color: #370512;
+    border-color: #370512;
+}
+/* BOOK AN EXCLUSIVE END */
+
+/* PLACES SECTION CARDS START */
+.places-section {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.places-section-info {
+    margin-bottom: 20px;
+}
+
+.places-section-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.places-card {
+    width: 280px;
+    height: 400px;
+}
+
+.img-container {
+    width: 280px;
+    height: 250px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 13px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.info-title {
+    font-size: 22px;
+}
+
+.info-desc {
+    font-size: 12px;
+}
+
+.card-btn {
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 16px;
+    padding: 8px 15px;
+    width: fit-content;
+    cursor: pointer;
+}
+/* PLACES SECTION CARDS END */
+
+/* FOOTER START */
+.footer-container {
+    background-color: #000000;
+    color: #f3f0ed;
+    display: flex;
+    padding: 30px 80px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-container .footer-column:first-child,
+.footer-container .footer-column:last-child {
+    align-self: center;
+}
+
+.footer-container .footer-column h1 {
+    font-size: 26px;
+}
+
+.footer-container .footer-column .footer-column-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-container .footer-column .footer-column-list .footer-column-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.social-media {
+    margin-top: 5px;
+    display: flex;
+    column-gap: 10px;
+}
+/* FOOTER END */

@@ -1,0 +1,112 @@
+@media (max-width: 600px) {
+
+    /* navbar START */
+    .home-navbar1 .home-middle .home-left,
+    .home-navbar1 .home-container01,
+    .home-navbar1 .home-right {
+        display: none;
+    }
+
+    .home-navbar1 .home-middle .navbar-logo-title {
+        margin: 0;
+    }
+
+    /* navbar END */
+
+    /* home-hero START */
+
+    .home-main .home-hero1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-main .home-hero1 .home-container03 {
+        align-items: center;
+    }
+
+    /* home-hero END */
+
+    /* section-container START */
+    .home-main .section-container.column {
+        padding-top: 40px;
+    }
+
+    .home-main .section-container.column .home-cards-container {
+        flex: 0 0 50%;
+        grid-gap: 10px;
+    }
+
+    .home-main .section-container.column .home-cards-container .category-card-image {
+        width: 270px;
+        height: 300px;
+    }
+    /* section-container END */
+   
+    /* home-container06 START */
+
+    .home-container06.max-width-container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /* home-container06 END */
+
+    /* lookbooks START */
+
+    .home-main .home-full-width-banner {
+        flex-direction: column;
+        padding-top: 0;
+        margin-top: 40px;
+    }
+
+    .section-container {
+        padding-top: 40px
+    }
+
+    /* content */
+
+    .home-main .home-full-width-banner .home-left4 {
+        padding: 25px 0;
+    }
+
+    .home-main .home-full-width-banner .home-content {
+        margin-bottom: 20px;
+    }
+
+    .home-main .home-full-width-banner .home-text30 {
+        width: 100%;
+    }
+
+    /* image */
+    .home-main .home-full-width-banner .home-image6 {
+        width: 100%;
+    }
+
+    /* lookbooks END */
+
+    /* our blog START */
+    .home-main .section-container .home-container08 {
+        justify-content: center;
+    }
+
+    .home-main .section-container .home-container08 .blog-post-card-blog-post-card {
+        max-width: 100%;
+    }
+    /* our blog END */
+
+    /* footer START */
+    .home-footer .home-footer1 {
+        flex-direction: column;
+        padding: 50px 0 20px 0;
+    }
+
+    .home-footer .home-container09 {
+        order: 1;
+    }
+
+    .home-footer .home-links-container {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    /* footer END */
+}
